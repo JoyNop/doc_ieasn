@@ -1,0 +1,46 @@
+# 忽略node_modules目录，因为它是依赖项的安装目录，不需要提交到仓库
+node_modules/
+
+# 忽略dist目录，因为它通常是构建后的输出目录，也不需要提交到仓库
+/dist/
+
+# 忽略.vitepress/dist目录，同样因为它是构建后的输出目录
+/.vitepress/dist/
+
+# 忽略临时文件和文件夹，例如操作系统生成的临时文件
+.DS_Store
+Thumbs.db
+
+# 忽略日志文件
+*.log
+*.log.json
+
+# 忽略编译生成的文件，如TypeScript编译后的.js文件（如果有的话）
+# 注意：这个规则可能需要根据具体项目情况调整
+# *.js
+# *.map
+
+# 忽略编辑器或IDE生成的配置文件和缓存文件
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# 忽略npm/yarn/pnpm的锁文件，通常这些文件会在安装依赖时自动生成
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# 如果使用GitHub Actions或其他CI/CD工具，可能还需要忽略相关的配置文件或输出目录
+# 例如：忽略GitHub Actions的日志目录
+/.github/workflows/logs/
+
+# 其他根据项目需求需要忽略的文件或文件夹
+# 例如：忽略测试输出目录
+/test-output/
+
+# 注意：如果需要忽略特定目录下的特定文件类型，可以使用以下格式
+# /some_directory/*.txt
+# 忽略所有.md文件的备份文件（如果有的话）
+# *.md~
