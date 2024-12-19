@@ -30,7 +30,7 @@ Thumbs.db
 # 忽略npm/yarn/pnpm的锁文件，通常这些文件会在安装依赖时自动生成
 package-lock.json
 yarn.lock
-pnpm-lock.yaml
+# pnpm-lock.yaml
 
 # 如果使用GitHub Actions或其他CI/CD工具，可能还需要忽略相关的配置文件或输出目录
 # 例如：忽略GitHub Actions的日志目录
